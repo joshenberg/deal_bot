@@ -5,7 +5,7 @@ import os
 
 reddit = praw.Reddit('bot1')
 
-subreddit = reddit.subreddit("pythonforengineers")
+subreddit = reddit.subreddit("frugalmalefashion")
 if not os.path.isfile("posts_replied_to.txt"):
     posts_replied_to = []
 
@@ -17,7 +17,7 @@ else:
 
 
 keys = ["common projects", "cp ", "acne", "naked and famous", "naked & famous", "margiela", "uniqlo", "red wing", "norse",
-        "bonobos", "patagonia", "ray ban", "i love python"]
+        "bonobos", "patagonia", "ray ban"]
 
 for submission in subreddit.stream.submissions():
 
